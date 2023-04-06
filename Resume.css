@@ -398,7 +398,7 @@ textarea {
     height: 50%;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 479px) {
 
     .navbar {
         display: none;
