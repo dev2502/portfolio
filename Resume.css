@@ -173,8 +173,8 @@
     margin-top: 1%;
     margin-bottom: 4%;
     position: relative;
-    left: 45%;
-    width: 10%;
+    left: 40%;
+    width: 20%;
 }
 
 .para {
@@ -398,7 +398,7 @@ textarea {
     height: 50%;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
 
     .navbar {
         display: none;
@@ -413,20 +413,16 @@ textarea {
         display: flex;
         text-align: center;
         padding: 5% ;
-        /* border: solid white; */
     }
 
     .inside_div_about {
-        /* padding: 4.5% 4% 4% 15%; */
         height: 100vh;
         display: flex;
         text-align: center;
         padding: 1%;
         top: 5%;
         position: relative;
-        /* vertical-align: middle; */
         text-align: left;
-        /* border: blue solid; */
         flex-wrap: wrap;
     }
 
@@ -476,16 +472,34 @@ textarea {
 
     .outerDiv {
         height: fit-content;
-        width: 100%;
+        width: 100vw;
         position: relative;
         text-align: center;
-        background-color: gba(0, 0, 0, 0.521);
+        /* background-color: rgba(0, 0, 0, 0.521); */
     }
 
     .inside_div {
         background-color: rgba(0, 0, 0, 0.521);
-        padding: 5% 10% 5% 15%;
-        height: fit
+        /* padding: 5% 10% 5% 15%; */
+        height: fit-content;
+    }
+
+    .heading {
+        color: rgb(231, 152, 49);
+        position: relative;
+        text-align: center;
+        font-weight: bold;
+        font-size: 180%;
+        font-family: monospace;
+    }    
+
+    .hrAfterHeading {
+        border: rgb(231, 152, 49) solid 0.1vh;
+        margin-top: 1%;
+        margin-bottom: 4%;
+        position: relative;
+        left: 35%;
+        width: 30%;
     }
 
     #eduContainer {
@@ -493,7 +507,7 @@ textarea {
         width: 100%;
         /* border: solid; */
         color: beige;
-        padding: 2% 2% 2% 0%;
+        /* padding: 2% 2% 2% 0%; */
     }
     
     .edudiv {
@@ -517,21 +531,17 @@ textarea {
         /* transform: scale(1.1); */
         /* transform: translateY(-10%); */
     
-        border: 1px rgb(212, 127, 14) solid;
+        border: 1px rgb(231, 152, 49) solid;
     
     }
     
     .edudiv h4 {
         margin-top: 0;
-        /* margin-left: -1%; */
-        /* padding: 2% 0% 2% 0%; */
-        /* border: solid; */
-        /* margin-right: -1%; */
         font-size: 70%;
         color: rgb(245, 214, 169);
         width: 100%;
-        height: 4em;
-        border-bottom: #bf6e2c solid;
+        /* height: 4em; */
+        border-bottom: rgb(231, 152, 49) solid;
         /* border-bottom: #fff 1px solid; */
     }
     
@@ -543,7 +553,7 @@ textarea {
     
     .edudiv .yr {
         font-size: 60%;
-        margin-top: 2%;
+        /* margin-top: 2%; */
     }
     
     .edudiv .marks {
