@@ -399,57 +399,53 @@ textarea {
 }
 
 @media screen and (max-width: 600px) {
-    * {
-        scroll-behavior: smooth;
-        margin: 0;
-        padding: 0;
-    }
 
     .navbar {
-       display: none;
-    }
-
-    #alldivs {
-        font-family: Arial, sans-serif;
-        background-image: linear-gradient(#0d1b3d, #3d1f0d, #0d1b3d, #3d1f0d, #0d1b3d);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        margin: 0;
-        padding: 0;
+        display: none;
     }
 
     #about {
-        height: fit-content;
+        height: 110vh;
         width: auto;
         background-color: rgba(0, 0, 0, 0.521);
         color: beige;
         position: relative;
+        display: flex;
         text-align: center;
-        padding: 3%;
+        padding: 5% ;
+        /* border: solid white; */
     }
 
     .inside_div_about {
-        padding: 4.5% 4% 4% 15%;
-        border-radius: 1em;
+        /* padding: 4.5% 4% 4% 15%; */
+        height: 100vh;
         display: flex;
-        vertical-align: middle;
+        text-align: center;
+        padding: 1%;
+        top: 5%;
+        position: relative;
+        /* vertical-align: middle; */
         text-align: left;
+        /* border: blue solid; */
+        flex-wrap: wrap;
     }
 
     .aboutText {
-        width: 60%;
+        /* width: 60%; */
+        width: 100%;
+        /* border: green solid; */
     }
 
     .aboutHead {
         color: rgb(231, 152, 49);
-        float: left;
+        /* float: left; */
         width: 100%;
         position: relative;
         font-size: 250%;
         font-family: Georgia, 'Times New Roman', Times, serif;
+        display: flex;
         line-height: 150%;
+        /* border: red solid; */
     }
 
     .aboutPara {
@@ -461,12 +457,16 @@ textarea {
         font-size: 110%;
         line-height: 150%;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        /* border: red solid; */
     }
 
     .imgAbout {
-        height: 100%;
-        width: 50%;
-        margin-left: 15%;
+        height: 50%;
+        width: 100%;
+        /* border: red solid; */
+        
+        position: relative;
+        /* display: none; */
     }
 
     .imgAbout img {
@@ -483,7 +483,7 @@ textarea {
     }
 
     .inside_div {
-        background-color: rgba(0, 0, 0, 0.678);
+        background-color: rgba(0, 0, 0, 0.521);
         padding: 5% 10% 5% 15%;
         height: fit
     }
@@ -513,7 +513,7 @@ textarea {
         border: #e2c7a4 solid 1px;
     }
     
-    .edudiv:hover {
+    .edudiv:focus {
         /* transform: scale(1.1); */
         /* transform: translateY(-10%); */
     
