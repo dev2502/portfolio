@@ -406,51 +406,8 @@ textarea {
     }
 
     .navbar {
-        background-color: #0d1b3d;
-        overflow: hidden;
-        position: sticky;
-        height: 10%;
+       display: none;
     }
-
-    .navbar a {
-        align-items: center;
-        color: white;
-        text-align: center;
-        padding: 1.4% 1.6%;
-        text-decoration: none;
-        padding: 2vw;
-        justify-content: center;
-        position: relative;
-    }
-
-    .navbar:first-child {
-        padding-left: 15%;
-    }
-
-    .line {
-        display: inline-block;
-        position: relative;
-        color: #bf6e2c;
-    }
-
-    .line::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 3%;
-        bottom: 0;
-        left: 0;
-        background-color: rgb(231, 152, 49);
-        transform-origin: center;
-        transition: transform 0.25s ease-in-out;
-    }
-
-    .line:hover::after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    }
-
 
     #alldivs {
         font-family: Arial, sans-serif;
