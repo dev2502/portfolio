@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+.mobile-navbar{
+    display: none;
+}
+
 .navbar {
     background-color: #0d1b3d;
     overflow: hidden;
@@ -404,6 +408,67 @@ textarea {
         display: none;
     }
 
+    .mobile-navbar{
+        display: block;
+    }
+
+    .nav-button{
+        display: flex;
+        position: relative;
+        text-decoration: none;
+        color: beige;
+        /* display: block; */
+        margin-top: 2%;
+        /* border: solid beige 1px;   */
+        left: 5%;   
+    }
+
+    .sidebar {
+        position: fixed;
+        left: -60%;
+        top: 0%;
+        width: 0%;
+        /* background-color: #24262d70 ; */
+        color: beige;
+        padding: 3.65%;
+        transition: left 0.5s ease-in-out;
+      }
+
+      .sidebar a{
+        text-decoration: none;
+        color: beige;
+        font-family: 'Times New Roman', Times, serif;
+        cursor: pointer;
+      }
+
+      .sidebar li{
+        padding: 1%;
+      }
+
+      .sidebar ul{
+        display: flex;
+        flex-direction: row;
+      }
+
+      .sidebar-open{
+        left: 12%;
+        top: 0%;
+        width: 100%;
+        padding: 3%;
+      }
+
+      .contactme-button{
+        display: flex;
+        position: relative;
+        text-decoration: none;
+        color: beige;
+        /* display: block; */
+        margin-top: 2%;
+        /* border: solid beige 1px;   */
+        float: right;
+        right: 5%;
+       }
+
     #about {
         height: 110vh;
         width: auto;
@@ -550,12 +615,8 @@ textarea {
     #contact {
         height: 100vh;
         width: 100%;
-
-        /* border: solid red; */
-        /* align-items: center; */
-        /* flex-direction: column; */
-        /* flex-wrap: wrap; */
         background-color: #bf6e2c;
+        display: none;
     }
     
     /*all imgs in  adiv*/
@@ -608,8 +669,8 @@ textarea {
         color: beige;
         text-align: center;
         border-top: none;
+        text-shadow: none;
     }
-    
     
     .formContactme {
         position: relative;
@@ -661,3 +722,12 @@ textarea {
     
 }
 
+@media screen and (max-width: 991px) {
+    /* start of large tablet styles */
+    
+}
+    
+@media screen and (max-width: 767px) {
+/* start of medium tablet styles */
+    
+}
