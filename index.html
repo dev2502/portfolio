@@ -6,9 +6,10 @@
     <meta charset="utf-8">
     <title>My Resume</title>
     <link type="text/css" rel="stylesheet" href="Resume.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body>   
 
     <nav class="navbar">
         <a href="#about" class="line">About</a>
@@ -20,6 +21,38 @@
     </nav>
 
     <div id="alldivs">
+        <div class="mobile-navbar">
+            <i class="fa fa-bars fa-2x nav-button" aria-hidden="true" onclick="toggleSidebar()"></i>
+            <script>
+                function toggleSidebar() {
+                var sidebar = document.getElementById("sidebar");
+                sidebar.classList.toggle("sidebar-open");
+                }
+            </script>
+            <i class="fa fa-user fa-2x contactme-button" aria-hidden="true" onclick="openContactForm()"></i>
+            <script>
+                function openContactForm() {
+                    var contactForm = document.getElementById("contact");
+        if (contactForm.style.display === "none") {
+            contactForm.style.display = "block";
+            contactForm.style.position = "fixed";
+            contactForm.style.top = "7%";
+            document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
+        } else {
+            contactForm.style.display = "none";
+        } 
+                }
+            </script>
+            <div id="sidebar" class="sidebar">
+                <ul>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Certifications</a></li>
+                <li><a href="#">Education</a></li>
+                </ul>
+            </div>
+        </div>
         <div id="about">
             <div class="inside_div_about">
                 <div class="aboutText">
@@ -28,6 +61,7 @@
                         I'm a B.Tech. student majoring in information technology, and I love creating and developing
                         websites.
                         My objective is to use my knowledge and education to return some of what the world has given me.
+                        Outside of work, I enjoy writing, listening to music, and swimming. I find inspiration in both small moments and significant experiences, which fuel my creativity and passion for web development.
                     <p>
                 </div>
                 <div class="imgAbout">
