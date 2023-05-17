@@ -410,6 +410,7 @@ textarea {
 
     .mobile-navbar{
         display: block;
+        position: sticky;
     }
 
     .nav-button{
