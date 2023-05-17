@@ -417,21 +417,21 @@ textarea {
         position: relative;
         text-decoration: none;
         color: beige;
-        /* display: block; */
-        margin-top: 2%;
-        /* border: solid beige 1px;   */
+        display: block; 
+        margin-top: 6%;
         left: 5%;   
     }
 
     .sidebar {
         position: fixed;
-        left: -60%;
-        top: 0%;
+        left: -100%;
         width: 0%;
-        /* background-color: #24262d70 ; */
         color: beige;
-        padding: 3.65%;
         transition: left 0.5s ease-in-out;
+        top: 10%;
+        padding: 3%;
+        background-color: #060d21;
+        z-index: 1;
       }
 
       .sidebar a{
@@ -445,16 +445,19 @@ textarea {
         padding: 1%;
       }
 
-      .sidebar ul{
-        display: flex;
-        flex-direction: row;
-      }
+      /* .sidebar ul{
+        flex-wrap: wrap;
+      } */
 
       .sidebar-open{
-        left: 12%;
-        top: 0%;
+        left: 0%;
+        top: 10%;
         width: 100%;
         padding: 3%;
+        background-color: #060d21;
+        z-index: 1;
+        /* flex-wrap: wrap; */
+
       }
 
       .contactme-button{
@@ -462,11 +465,10 @@ textarea {
         position: relative;
         text-decoration: none;
         color: beige;
-        /* display: block; */
         margin-top: 2%;
-        /* border: solid beige 1px;   */
         float: right;
         right: 5%;
+        margin-top: 6%;
        }
 
     #about {
@@ -485,7 +487,7 @@ textarea {
         display: flex;
         text-align: center;
         padding: 1%;
-        top: 5%;
+        top: 0%;
         position: relative;
         text-align: left;
         flex-wrap: wrap;
@@ -525,7 +527,6 @@ textarea {
         height: 50%;
         width: 100%;
         /* border: red solid; */
-        
         position: relative;
         /* display: none; */
     }
@@ -533,7 +534,12 @@ textarea {
     .imgAbout img {
         height: 100%;
         width: 100%;
+      
     }
+
+#experience{
+    margin-top: 50%;
+}
 
     .outerDiv {
         height: fit-content;
@@ -656,7 +662,7 @@ textarea {
         /* border: #3d1f0d solid; */
         font-size: 150%;
         color: beige;
-        left: -10%;
+        left: 0%;
     }
     
     .contactHeading h1:first-child {
@@ -676,7 +682,8 @@ textarea {
         position: relative;
         /* float: right; */
         /* height: fit-content; */
-        top: 12%;
+        top: 5.5%;
+        right: 3%;
         width: 70%;
         /* border: red solid; */
         /* top: 20vh; */
